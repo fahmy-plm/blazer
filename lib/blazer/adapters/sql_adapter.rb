@@ -170,7 +170,7 @@ module Blazer
           if use_transaction?
             connection_model.transaction do
               yield
-              raise ActiveRecord::Rollback
+              #raise ActiveRecord::Rollback
             end
           else
             yield
